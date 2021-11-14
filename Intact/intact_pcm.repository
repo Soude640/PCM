@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_NnYuYEKjEeySdrFKrju45g" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_XMUBQEKjEeySdrFKrju45g" entityName="Snowflake">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_clcpIEKjEeySdrFKrju45g" entityName="" providedInterface__OperationProvidedRole="_Yhr4wEKjEeySdrFKrju45g"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_IOyfwEKoEeySdrFKrju45g" describedService__SEFF="_K9Si0EKnEeySdrFKrju45g">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_wRDe0EKoEeySdrFKrju45g" successor_AbstractAction="_YAnH0EKqEeySdrFKrju45g"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Wm9NQEKqEeySdrFKrju45g" predecessor_AbstractAction="_YAnH0EKqEeySdrFKrju45g"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_YAnH0EKqEeySdrFKrju45g" entityName="storeinternally" predecessor_AbstractAction="_wRDe0EKoEeySdrFKrju45g" successor_AbstractAction="_Wm9NQEKqEeySdrFKrju45g">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_BIjHoQ3KEdyouMqirZIhzQ"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_Zd9TwEKjEeySdrFKrju45g" entityName="Spark">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_dyZkcEKjEeySdrFKrju45g" entityName="" providedInterface__OperationProvidedRole="_aDCWwEKjEeySdrFKrju45g"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_nmGTIEKjEeySdrFKrju45g" entityName="" requiredInterface__OperationRequiredRole="_Yhr4wEKjEeySdrFKrju45g"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_zR6nwEKoEeySdrFKrju45g" describedService__SEFF="_Du_6sEKoEeySdrFKrju45g">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_zoCowEKoEeySdrFKrju45g" successor_AbstractAction="_vcyB4EKrEeySdrFKrju45g"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_zoCowUKoEeySdrFKrju45g" predecessor_AbstractAction="_vcyB4EKrEeySdrFKrju45g"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_vcyB4EKrEeySdrFKrju45g" entityName="ExternalCallAction1" predecessor_AbstractAction="_zoCowEKoEeySdrFKrju45g" successor_AbstractAction="_zoCowUKoEeySdrFKrju45g" calledService_ExternalService="_K9Si0EKnEeySdrFKrju45g" role_ExternalService="_nmGTIEKjEeySdrFKrju45g"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_Yhr4wEKjEeySdrFKrju45g" entityName="Database">
+    <signatures__OperationInterface id="_K9Si0EKnEeySdrFKrju45g" entityName="store">
+      <parameters__OperationSignature parameterName="parameter0"/>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_aDCWwEKjEeySdrFKrju45g" entityName="Iweb">
+    <signatures__OperationInterface id="_Du_6sEKoEeySdrFKrju45g" entityName="preprocess"/>
+  </interfaces__Repository>
+</repository:Repository>
