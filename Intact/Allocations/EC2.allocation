@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_JJFPsEKmEeySdrFKrju45g" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="../ResourceEnvironmnets/EC2.resourceenvironment#/"/>
+  <system_Allocation href="../intact_pcm.system#_qNa6sEKjEeySdrFKrju45g"/>
+  <allocationContexts_Allocation id="_ppBZ4EKzEeySdrFKrju45g" entityName="Allocation_Assembly_Snowflake">
+    <resourceContainer_AllocationContext href="../ResourceEnvironmnets/EC2.resourceenvironment#_l7CwcEKsEeySdrFKrju45g"/>
+    <assemblyContext_AllocationContext href="../intact_pcm.system#_ofQTQEKkEeySdrFKrju45g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_cqGP4EK0EeySdrFKrju45g" entityName="Allocation_Assembly_Spark">
+    <resourceContainer_AllocationContext href="../ResourceEnvironmnets/EC2.resourceenvironment#_mou84EKsEeySdrFKrju45g"/>
+    <assemblyContext_AllocationContext href="../intact_pcm.system#_zK2TQEKkEeySdrFKrju45g"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>
